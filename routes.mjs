@@ -29,7 +29,7 @@ router.post(
                 "title": req.body["newBookTitle"],
                 "author": req.body["newBookAuthor"]
             }
-            await bookList.addBookToFile(newBook)
+            // await bookList.addBookToFile(newBook)  // αποσυνδέθηκε για την online έκδοση
             res.redirect("/books")
         }
         else {
